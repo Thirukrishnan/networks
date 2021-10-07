@@ -1,5 +1,4 @@
-					#Q1
-import socket
+	import socket
 import os
 from functools import reduce
 
@@ -33,6 +32,6 @@ while True:
             exchng.send(route())
         elif data == 'A':
             exchng.send(arp())
-	elif data == 'N':
-	    exchng.send(net())
+        elif data == 'N':
+            exchng.send(net())
     exchng.close()
